@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B6AB05C886F465D99EB300A /* libPods-GroupTableViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4961D3248FE5DFE9DE9C2D59 /* libPods-GroupTableViewDemo.a */; };
+		86736FC120CFBCC800090AFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86736FC020CFBCC800090AFD /* AppDelegate.m */; };
+		86736FC420CFBCC800090AFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86736FC320CFBCC800090AFD /* ViewController.m */; };
+		86736FC720CFBCC800090AFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86736FC520CFBCC800090AFD /* Main.storyboard */; };
+		86736FC920CFBCC900090AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86736FC820CFBCC900090AFD /* Assets.xcassets */; };
+		86736FCC20CFBCC900090AFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86736FCA20CFBCC900090AFD /* LaunchScreen.storyboard */; };
+		86736FCF20CFBCC900090AFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86736FCE20CFBCC900090AFD /* main.m */; };
+		86736FDA20CFBF7300090AFD /* RRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86736FD920CFBF7300090AFD /* RRViewController.m */; };
+		86736FDD20CFBF8A00090AFD /* RRNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86736FDC20CFBF8A00090AFD /* RRNavigationViewController.m */; };
+		86736FE020CFBF9B00090AFD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86736FDF20CFBF9B00090AFD /* MainViewController.m */; };
+		86736FE320CFC23700090AFD /* RRGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86736FE220CFC23700090AFD /* RRGroupView.m */; };
+		8673702220D1118600090AFD /* RRButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8673702120D1118600090AFD /* RRButton.m */; };
+		8673704720D214C600090AFD /* RRTableVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 8673704620D214C600090AFD /* RRTableVIew.m */; };
+		8673704B20D2314300090AFD /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8673704920D2314300090AFD /* Aspects.m */; };
+		8677FA4A20DB45B5004AB535 /* UIView+RR.m in Sources */ = {isa = PBXBuildFile; fileRef = 8677FA4920DB45B5004AB535 /* UIView+RR.m */; };
+		8677FA4D20DB4E96004AB535 /* RRGroupHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8677FA4C20DB4E96004AB535 /* RRGroupHeaderView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		253070F6B9725109A2196CF5 /* Pods-GroupTableViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupTableViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GroupTableViewDemo/Pods-GroupTableViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4961D3248FE5DFE9DE9C2D59 /* libPods-GroupTableViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GroupTableViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86736FBC20CFBCC800090AFD /* GroupTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86736FBF20CFBCC800090AFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		86736FC020CFBCC800090AFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		86736FC220CFBCC800090AFD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		86736FC320CFBCC800090AFD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		86736FC620CFBCC800090AFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86736FC820CFBCC900090AFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86736FCB20CFBCC900090AFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		86736FCD20CFBCC900090AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86736FCE20CFBCC900090AFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86736FD520CFBE5D00090AFD /* RRHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRHeader.pch; sourceTree = "<group>"; };
+		86736FD820CFBF7300090AFD /* RRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRViewController.h; sourceTree = "<group>"; };
+		86736FD920CFBF7300090AFD /* RRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRViewController.m; sourceTree = "<group>"; };
+		86736FDB20CFBF8A00090AFD /* RRNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRNavigationViewController.h; sourceTree = "<group>"; };
+		86736FDC20CFBF8A00090AFD /* RRNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRNavigationViewController.m; sourceTree = "<group>"; };
+		86736FDE20CFBF9B00090AFD /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		86736FDF20CFBF9B00090AFD /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		86736FE120CFC23700090AFD /* RRGroupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRGroupView.h; sourceTree = "<group>"; };
+		86736FE220CFC23700090AFD /* RRGroupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRGroupView.m; sourceTree = "<group>"; };
+		8673702020D1118600090AFD /* RRButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRButton.h; sourceTree = "<group>"; };
+		8673702120D1118600090AFD /* RRButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRButton.m; sourceTree = "<group>"; };
+		8673704520D214C600090AFD /* RRTableVIew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRTableVIew.h; sourceTree = "<group>"; };
+		8673704620D214C600090AFD /* RRTableVIew.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRTableVIew.m; sourceTree = "<group>"; };
+		8673704920D2314300090AFD /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		8673704A20D2314300090AFD /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		8677FA4820DB45B5004AB535 /* UIView+RR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+RR.h"; sourceTree = "<group>"; };
+		8677FA4920DB45B5004AB535 /* UIView+RR.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+RR.m"; sourceTree = "<group>"; };
+		8677FA4B20DB4E96004AB535 /* RRGroupHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRGroupHeaderView.h; sourceTree = "<group>"; };
+		8677FA4C20DB4E96004AB535 /* RRGroupHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRGroupHeaderView.m; sourceTree = "<group>"; };
+		B1EE0648C068F0785D98D994 /* Pods-GroupTableViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GroupTableViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GroupTableViewDemo/Pods-GroupTableViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86736FB920CFBCC800090AFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B6AB05C886F465D99EB300A /* libPods-GroupTableViewDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03EEB3C75DDDDC4F407645CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				253070F6B9725109A2196CF5 /* Pods-GroupTableViewDemo.debug.xcconfig */,
+				B1EE0648C068F0785D98D994 /* Pods-GroupTableViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		86736FB320CFBCC800090AFD = {
+			isa = PBXGroup;
+			children = (
+				86736FBE20CFBCC800090AFD /* GroupTableViewDemo */,
+				86736FBD20CFBCC800090AFD /* Products */,
+				03EEB3C75DDDDC4F407645CA /* Pods */,
+				C14006056017BEF645B3FA18 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		86736FBD20CFBCC800090AFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86736FBC20CFBCC800090AFD /* GroupTableViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86736FBE20CFBCC800090AFD /* GroupTableViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				86736FBF20CFBCC800090AFD /* AppDelegate.h */,
+				86736FC020CFBCC800090AFD /* AppDelegate.m */,
+				86736FD520CFBE5D00090AFD /* RRHeader.pch */,
+				86736FC220CFBCC800090AFD /* ViewController.h */,
+				86736FC320CFBCC800090AFD /* ViewController.m */,
+				8673702020D1118600090AFD /* RRButton.h */,
+				8673702120D1118600090AFD /* RRButton.m */,
+				8673704520D214C600090AFD /* RRTableVIew.h */,
+				8673704620D214C600090AFD /* RRTableVIew.m */,
+				8677FA4820DB45B5004AB535 /* UIView+RR.h */,
+				8677FA4920DB45B5004AB535 /* UIView+RR.m */,
+				8673704820D2313A00090AFD /* Library */,
+				86736FD620CFBF1F00090AFD /* RRRoot */,
+				86736FC520CFBCC800090AFD /* Main.storyboard */,
+				86736FC820CFBCC900090AFD /* Assets.xcassets */,
+				86736FCA20CFBCC900090AFD /* LaunchScreen.storyboard */,
+				86736FCD20CFBCC900090AFD /* Info.plist */,
+				86736FCE20CFBCC900090AFD /* main.m */,
+			);
+			path = GroupTableViewDemo;
+			sourceTree = "<group>";
+		};
+		86736FD620CFBF1F00090AFD /* RRRoot */ = {
+			isa = PBXGroup;
+			children = (
+				86736FD720CFBF2E00090AFD /* ViewController */,
+				86736FDE20CFBF9B00090AFD /* MainViewController.h */,
+				86736FDF20CFBF9B00090AFD /* MainViewController.m */,
+				86736FE120CFC23700090AFD /* RRGroupView.h */,
+				86736FE220CFC23700090AFD /* RRGroupView.m */,
+				8677FA4B20DB4E96004AB535 /* RRGroupHeaderView.h */,
+				8677FA4C20DB4E96004AB535 /* RRGroupHeaderView.m */,
+			);
+			path = RRRoot;
+			sourceTree = "<group>";
+		};
+		86736FD720CFBF2E00090AFD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				86736FD820CFBF7300090AFD /* RRViewController.h */,
+				86736FD920CFBF7300090AFD /* RRViewController.m */,
+				86736FDB20CFBF8A00090AFD /* RRNavigationViewController.h */,
+				86736FDC20CFBF8A00090AFD /* RRNavigationViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8673704820D2313A00090AFD /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				8673704A20D2314300090AFD /* Aspects.h */,
+				8673704920D2314300090AFD /* Aspects.m */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		C14006056017BEF645B3FA18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4961D3248FE5DFE9DE9C2D59 /* libPods-GroupTableViewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86736FBB20CFBCC800090AFD /* GroupTableViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86736FD220CFBCC900090AFD /* Build configuration list for PBXNativeTarget "GroupTableViewDemo" */;
+			buildPhases = (
+				619065095DE4F9692D01E999 /* [CP] Check Pods Manifest.lock */,
+				86736FB820CFBCC800090AFD /* Sources */,
+				86736FB920CFBCC800090AFD /* Frameworks */,
+				86736FBA20CFBCC800090AFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GroupTableViewDemo;
+			productName = GroupTableViewDemo;
+			productReference = 86736FBC20CFBCC800090AFD /* GroupTableViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86736FB420CFBCC800090AFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = LRanger;
+				TargetAttributes = {
+					86736FBB20CFBCC800090AFD = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 86736FB720CFBCC800090AFD /* Build configuration list for PBXProject "GroupTableViewDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86736FB320CFBCC800090AFD;
+			productRefGroup = 86736FBD20CFBCC800090AFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86736FBB20CFBCC800090AFD /* GroupTableViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86736FBA20CFBCC800090AFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86736FCC20CFBCC900090AFD /* LaunchScreen.storyboard in Resources */,
+				86736FC920CFBCC900090AFD /* Assets.xcassets in Resources */,
+				86736FC720CFBCC800090AFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		619065095DE4F9692D01E999 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GroupTableViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86736FB820CFBCC800090AFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86736FDA20CFBF7300090AFD /* RRViewController.m in Sources */,
+				86736FE020CFBF9B00090AFD /* MainViewController.m in Sources */,
+				86736FDD20CFBF8A00090AFD /* RRNavigationViewController.m in Sources */,
+				8677FA4A20DB45B5004AB535 /* UIView+RR.m in Sources */,
+				86736FE320CFC23700090AFD /* RRGroupView.m in Sources */,
+				86736FC420CFBCC800090AFD /* ViewController.m in Sources */,
+				8673704B20D2314300090AFD /* Aspects.m in Sources */,
+				8677FA4D20DB4E96004AB535 /* RRGroupHeaderView.m in Sources */,
+				8673702220D1118600090AFD /* RRButton.m in Sources */,
+				86736FCF20CFBCC900090AFD /* main.m in Sources */,
+				86736FC120CFBCC800090AFD /* AppDelegate.m in Sources */,
+				8673704720D214C600090AFD /* RRTableVIew.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		86736FC520CFBCC800090AFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86736FC620CFBCC800090AFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		86736FCA20CFBCC900090AFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86736FCB20CFBCC900090AFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86736FD020CFBCC900090AFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		86736FD120CFBCC900090AFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86736FD320CFBCC900090AFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 253070F6B9725109A2196CF5 /* Pods-GroupTableViewDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = GroupTableViewDemo/RRHeader.pch;
+				INFOPLIST_FILE = GroupTableViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LRanger.GroupTableViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		86736FD420CFBCC900090AFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1EE0648C068F0785D98D994 /* Pods-GroupTableViewDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = GroupTableViewDemo/RRHeader.pch;
+				INFOPLIST_FILE = GroupTableViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LRanger.GroupTableViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86736FB720CFBCC800090AFD /* Build configuration list for PBXProject "GroupTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86736FD020CFBCC900090AFD /* Debug */,
+				86736FD120CFBCC900090AFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86736FD220CFBCC900090AFD /* Build configuration list for PBXNativeTarget "GroupTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86736FD320CFBCC900090AFD /* Debug */,
+				86736FD420CFBCC900090AFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86736FB420CFBCC800090AFD /* Project object */;
+}
