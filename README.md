@@ -37,5 +37,7 @@
 }
 ```
 
-最终实现效果如下:
+
+最终实现效果如下
+
 ![](https://github.com/TactBoy/GroupTableViewDemo/blob/master/Demo.gif)
