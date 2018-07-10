@@ -10,36 +10,4 @@
 
 @implementation RRGroupHeaderView
 
-// iOS8 && iOS9 找不到方法会闪退
-- (void)delaysContentTouches {
-    NSLog(@"%s", __func__);
-}
-
-- (void)_touchDelayForScrollDetection {
-    NSLog(@"%s", __func__);
-}
-
-- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
-    NSMethodSignature *sig = [super methodSignatureForSelector:aSelector];
-    if (sig) {
-        return sig;
-    } else {
-        NSMethodSignature *sig = [super methodSignatureForSelector:@selector(emptyFunc)];
-        return sig;
-    }
-}
-
-- (void)forwardInvocation:(NSInvocation *)anInvocation {
-    if ([self respondsToSelector:anInvocation.selector]) {
-        [super forwardInvocation:anInvocation];
-    } else {
-        NSLog(@"notImplementMethond: %@", NSStringFromSelector(anInvocation.selector));
-    }
-}
-
-- (void)emptyFunc {
-    NSLog(@"%s", __func__);
-}
-
-
 @end

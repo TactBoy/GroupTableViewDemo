@@ -17,7 +17,6 @@
     NSArray<UITableView *> *_tableViews;
     UIScrollView *_mainScrollView;
     UIView *_headerView;
-    NSMutableArray<NSArray *> *_tableViewGestureeArr;
     BOOL _lockOffsetChange;
 }
 
@@ -79,8 +78,6 @@
     _mainScrollView.frame = self.bounds;
     [self addSubview:_mainScrollView];
 
-    _tableViewGestureeArr = [NSMutableArray new];
-
     NSInteger index = 0;
     for (UITableView *tb in _tableViews) {
         [tb addObserverBlockForKeyPath:@"contentOffset" block:^(UITableView *obj, id  _Nullable oldVal, id  _Nullable newVal) {
@@ -92,17 +89,6 @@
         tb.frame = CGRectMake(index * self.width, 0, self.width, self.height);
         [_mainScrollView addSubview:tb];
         
-        NSMutableArray *gesArr = tb.gestureRecognizers.mutableCopy;
-        if (kSystemVersion < 10) {
-            // 10 以下的系统不需要加这个手势
-            for (UIGestureRecognizer *ges in gesArr.objectEnumerator.allObjects) {
-                if ([ges isKindOfClass:NSClassFromString(@"UIScrollViewDelayedTouchesBeganGestureRecognizer")]) {
-                    [gesArr removeObject:ges];
-                }
-            }
-        }
-        [_tableViewGestureeArr addObject:gesArr];
-        
         UIEdgeInsets inset = tb.contentInset;
         inset.top += _headerView.height;
         tb.contentInset = inset;
@@ -112,6 +98,8 @@
     
     _headerView.frame = CGRectMake(0, 0, self.width, _headerView.height);
     [self addSubview:_headerView];
+    
+    [self addPanGestureForIndex:_index];
     
 }
 
@@ -208,51 +196,27 @@
     NSInteger index = (NSInteger)(_mainScrollView.contentOffset.x / self.width);
     index = MIN(_tableViews.count - 1, index);
     index = MAX(0, index);
+    [self removePanGestureForIndex:_index];
     _index = index;
+    [self addPanGestureForIndex:_index];
     _currentIndex = index;
     if (self.currentIndexDidChange) {
         self.currentIndexDidChange(_currentIndex);
     }
 }
 
-#pragma mark -
-#pragma mark -- -- -- -- -- - Override - -- -- -- -- --
-- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
-    if (_index < _tableViewGestureeArr.count) {
-        NSArray<UIGestureRecognizer *> *gesArr = _tableViewGestureeArr[_index];
-        if (CGRectContainsPoint(_headerView.frame, point)) {
-            for (NSArray<UIGestureRecognizer *> *t_gesArr in _tableViewGestureeArr) {
-                if (t_gesArr != gesArr) {
-                    for (UIGestureRecognizer *ges in gesArr) {
-                        [_headerView removeGestureRecognizer:ges];
-                    }
-                }
-            }
-            for (UIGestureRecognizer *ges in gesArr) {
-                [_headerView addGestureRecognizer:ges];
-            }
-        } else {
-            if (_index < _tableViews.count) {
-                UITableView *tb = _tableViews[_index];
-                for (NSArray<UIGestureRecognizer *> *t_gesArr in _tableViewGestureeArr) {
-                    if (t_gesArr != gesArr) {
-                        for (UIGestureRecognizer *ges in gesArr) {
-                            [tb removeGestureRecognizer:ges];
-                        }
-                    }
-                }
-                for (UIGestureRecognizer *ges in gesArr) {
-                    [tb addGestureRecognizer:ges];
-                }
-            }
-        }
+- (void)addPanGestureForIndex:(NSInteger)index {
+    if (index < _tableViews.count && index >= 0) {
+        UITableView *tb = _tableViews[index];
+        [self addGestureRecognizer:tb.panGestureRecognizer];
     }
-//    NSLog(@"%@", _headerView.gestureRecognizers);
-    return [super pointInside:point withEvent:event];
 }
 
-
-
-
+- (void)removePanGestureForIndex:(NSInteger)index {
+    if (index < _tableViews.count && index >= 0) {
+        UITableView *tb = _tableViews[index];
+        [self removeGestureRecognizer:tb.panGestureRecognizer];
+    }
+}
 
 @end
